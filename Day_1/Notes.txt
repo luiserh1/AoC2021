@@ -1,0 +1,5 @@
+- A -
+Solution: 1466
+Notes:
++ I've got 1465 as a wrong answer several times do to comparing strings instead of integers. (998 > 1006)
++ I've temporally forgot that the second paramether of the method "range" is not included
