@@ -1,0 +1,6 @@
+This time I am going to write down ll the solutions I get, even the wrong ones.
+
+- A -
+Solutions: 1813801
+Notes:
++ Another one with just one try!
