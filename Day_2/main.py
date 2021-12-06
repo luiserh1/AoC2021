@@ -42,8 +42,18 @@ def part_a(data):
 	return h_pos * depth, h_pos, depth
 
 
-def part_b(data, window_size):
-	pass
+def part_b(data):
+	h_pos = depth = aim = 0
+	for command in data:
+		if command[0] == FORWARD:
+			h_delta = command[1]
+			h_pos += h_delta
+			depth += h_delta * aim
+		elif command[0] == UP:
+			aim -= command[1]
+		elif command[0] == DOWN:
+			aim += command[1]
+	return h_pos * depth, h_pos, depth, aim
 
 
 def main():
@@ -51,9 +61,13 @@ def main():
 	input_path = "input.txt"
 	get_processed_input(input_path, data)
 
-	sol_a, h_pos, depth = part_a(data)
+	sol_a, h_pos_a, depth_a = part_a(data)
 	print("======================\nSOL A: [{}] is the result of multiplying {} of depth and {} of horizonal position".format(
-		sol_a, h_pos, depth))
+		sol_a, depth_a, h_pos_a))
+
+	sol_b, h_pos_b, depth_b, aim = part_b(data)
+	print("======================\nSOL B: [{}] is the result of multiplying {} of depth and {} of horizonal position.Final aim: {}".format(
+		sol_b, depth_b, h_pos_b, aim))
 
 
 if __name__=="__main__":

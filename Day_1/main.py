@@ -7,10 +7,10 @@ def print_data(data, num):
 
 
 def get_processed_input(input_path, data):
+	"The data is a simple List of Integers representing the depths"
 	with open(input_path, "rt") as f:
 		lines = f.readlines()
 		data += [int(depth_m) for depth_m in lines]
-		num_measurements = len(data)
 		print_data(data, 10)
 
 
@@ -46,8 +46,6 @@ def main():
 	sol_b = part_b(data, window_size)
 	print("======================\nSOL B: [{}] increases out of {} steps with a {}-sized window".format(
 		sol_b, num_measurements -window_size , window_size))
-
-
 
 
 if __name__=="__main__":

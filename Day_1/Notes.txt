@@ -5,7 +5,7 @@ Notes:
 + I've temporally forgot that the second paramether of the method "range" is not included
 
 - B -
-olution: 
+olution: 1491
 Notes:
 + When rebuilding the program to reuse code from the first part I learned something about the "passed by assignment"
 arguments of the Python mrthods. I was passing the List "data" to a method and then reassigning its value inside the method,
