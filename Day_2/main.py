@@ -14,7 +14,7 @@ def print_data(data, num):
 
 
 def get_processed_input(input_path, data):
-	"The data is a List of Tuples where the first member represents the command and the second represents the distance"
+	"""The data is a List of Tuples where the first member represents the command and the second represents the distance"""
 	with open(input_path, "rt") as f:
 		lines = f.readlines()
 		for line in lines:

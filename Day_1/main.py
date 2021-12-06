@@ -7,7 +7,7 @@ def print_data(data, num):
 
 
 def get_processed_input(input_path, data):
-	"The data is a simple List of Integers representing the depths"
+	"""The data is a simple List of Integers representing the depths"""
 	with open(input_path, "rt") as f:
 		lines = f.readlines()
 		data += [int(depth_m) for depth_m in lines]
