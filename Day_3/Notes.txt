@@ -1,0 +1,8 @@
+- A -
+Solutions: 753279, 749376
+Notes:
++ I was getting the wrong binary to decimal trasnformation because "0^0 = 1" *facepalm*
++ Despite the fact that I got some wrong answers I didn't submit them... the row keeps getting bigger!
+- B -
+Solutions: 
+Notes:
